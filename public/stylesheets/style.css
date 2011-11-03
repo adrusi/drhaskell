@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  -webkit-box-align: stretch;
+  -moz-box-align: stretch;
+  box-align: stretch;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#toolbar {
+  height: 25px;
+  line-height: 25px;
+  border-bottom: 1px solid #929292;
+}
+
+h1 {
+  font-size: 16px;
+  line-height: 25px;
+  display: inline-block;
+  margin: 0;
+  font-weight: normal
+}
+
+h1 > strong {
+  margin-right: 5px;
+}
+
+#save {
+  display: inline-block;
+  vertical-align: top;
+  margin: 3px 0 0 30px;
+}
+
+#editor {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+  border-bottom: 1px solid #929292;
+}
+
+#console {
+  height: 290px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  /* -webkit-box-flex: 3; */
+  /* -moz-box-flex: 3; */
+  /* box-flex: 3;  */
+  /* display: -webkit-box; */
+  /* display: -moz-box; */
+  /* display: box; */
+  /* -webkit-box-align: stretch; */
+  /* -moz-box-align: stretch; */
+  /* box-align: stretch; */
+  /* -webkit-box-orient: vertical; */
+  /* -moz-box-orient: vertical; */
+  /* box-orient: vertical; */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#cl {
+  display: inline-block;
+  font: inherit;
+  font-family: monospace;
+  border: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+#cl:focus {
+  outline: 0;
+}
+
+#clh {
+  display: inline;
+}

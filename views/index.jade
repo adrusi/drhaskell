@@ -1,0 +1,13 @@
+#sessid(style="display:none")= sessid
+#path(style="display:none")= path
+#file(style="display:none")= fileContents
+#toolbar
+  h1
+    strong DrHaskell
+    Editting #{path}
+  button(id="save") Save
+div(id="editor")
+div(id="console")
+  form(id="clf")
+    pre(id="clh")
+    input(type="text", id="cl")
