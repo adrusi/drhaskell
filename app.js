@@ -88,3 +88,12 @@ everyone.on("disconnect", function() {
   delete sessid2nowsessid[sessid];
   delete ghcis[sessid];
 });
+
+process.on("exit", function() {
+  for (var i in ghcis) {
+    if (ghcis.hasOwnProperty(i)) {
+      ghcis[i].kill();
+      delete ghcis[i];
+    }
+  }
+});
