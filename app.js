@@ -60,6 +60,9 @@ everyone.now.register = function(sessid, path) {
   ghcis[sessid].stdout.on("data", function(data) {
     $this.now.consoleOutput(data.toString());
   });
+  ghcis[sessid].stderr.on("data", function(data) {
+    $this.now.consoleOutput(data.toString());
+  });
 };
 
 everyone.now.save = function(path, data) {
